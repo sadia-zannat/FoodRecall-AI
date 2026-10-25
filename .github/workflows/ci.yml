@@ -1,0 +1,35 @@
+name: FoodRecall offline verification
+on:
+  push:
+  pull_request:
+jobs:
+  offline-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -r backend/requirements.txt
+      - name: Run offline backend tests
+        run: python -m pytest backend/tests -q
+      - name: Verify locale dictionaries
+        run: |
+          node scripts/test_i18n.mjs
+          node scripts/test_v02_locales.mjs
+          node scripts/test_user_branding.mjs
+      - name: Meterless Scout Intent local acceptance checks
+        run: python scripts/evaluate_scout.py
+      - name: Synthetic safety scenario evaluation
+        run: python scripts/evaluate_release.py
+      - name: Real localhost HTTP and SQLite smoke
+        run: python scripts/test_http_v04.py
+      - name: Save synthetic evaluation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-evaluation-results
+          path: evaluation/results_evidence_dependencies.json

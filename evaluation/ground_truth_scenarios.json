@@ -1,0 +1,21 @@
+{
+  "dataset_name": "Evidence Dependency Unit Scenarios v1",
+  "origin": "AUTHOR_DEFINED_SYNTHETIC_GROUND_TRUTH",
+  "external_validity": "None: not real FDA/ERP lot matching or LLM faithfulness evaluation",
+  "scenario_categories": [
+    {"name":"material_lot_quantity","expected_current":false,"reason":"Affected lot quantity changes the approved scope"},
+    {"name":"material_lot_location","expected_current":false,"reason":"Affected lot location changes the hold target"},
+    {"name":"material_lot_classification","expected_current":false,"reason":"Affected lot classification changes"},
+    {"name":"material_new_affected_lot","expected_current":false,"reason":"Previously clear lot becomes affected"},
+    {"name":"material_notice_detail","expected_current":false,"reason":"Critical FDA-like training notice changes"},
+    {"name":"material_notice_version","expected_current":false,"reason":"Critical training notice version changes"},
+    {"name":"material_critical_addition","expected_current":false,"reason":"New critical source alters decision context"},
+    {"name":"material_uncertain_lot_resolved","expected_current":false,"reason":"Uncertain lot removed from decision scope"},
+    {"name":"noncritical_note_insert","expected_current":true,"reason":"Added analyst note cannot change hold dependency"},
+    {"name":"noncritical_note_revision","expected_current":true,"reason":"Revised noncritical note cannot change hold dependency"},
+    {"name":"noncritical_case_title","expected_current":true,"reason":"Presentation-only case title is not a scope dependency"},
+    {"name":"noncritical_audit_entry","expected_current":true,"reason":"Append-only audit note cannot change scope"},
+    {"name":"noncritical_clear_inventory_quantity","expected_current":true,"reason":"Non-target clear lot quantity not in authorized hold scope"}
+  ],
+  "variants_per_category": 5
+}

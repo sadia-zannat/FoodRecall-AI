@@ -1,0 +1,3 @@
+# Optional, for the actual LangGraph StateGraph runtime. Requires network during install.
+# Install after base requirements: python -m pip install -r backend/requirements-agents.txt
+langgraph>=0.6,<2

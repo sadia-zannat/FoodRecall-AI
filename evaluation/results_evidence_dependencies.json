@@ -1,0 +1,605 @@
+{
+  "evaluation_name": "Evidence Dependency Unit Scenarios v1",
+  "timestamp": "2026-10-24T15:14:24.614099+00:00",
+  "origin": "AUTHOR_DEFINED_SYNTHETIC_GROUND_TRUTH",
+  "scope": "Single-tenant synthetic decision dependency regression only",
+  "test_method": "Real isolated SQLite, deterministic production functions, manually specified ground truth; no external APIs",
+  "total": 65,
+  "passed": 65,
+  "failed": 0,
+  "safety_property_violations": 0,
+  "latency_ms_p50": 0.084,
+  "latency_ms_p95": 0.1038,
+  "live_fda_tested": false,
+  "live_nemotron_tested": false,
+  "live_zetaris_tested": false,
+  "llm_faithfulness_measured": false,
+  "product_lot_precision_recall_measured": false,
+  "scenarios": [
+    {
+      "category": "material_lot_quantity",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.1164,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_quantity",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0862,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_quantity",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0913,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_quantity",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0863,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_quantity",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0874,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_location",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.1038,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_location",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0864,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_location",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0853,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_location",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.1036,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_location",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0953,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_classification",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.102,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_classification",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0849,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_classification",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0677,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_classification",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0687,
+      "changes": 1
+    },
+    {
+      "category": "material_lot_classification",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0867,
+      "changes": 1
+    },
+    {
+      "category": "material_new_affected_lot",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0872,
+      "changes": 1
+    },
+    {
+      "category": "material_new_affected_lot",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0862,
+      "changes": 1
+    },
+    {
+      "category": "material_new_affected_lot",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0869,
+      "changes": 1
+    },
+    {
+      "category": "material_new_affected_lot",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.1047,
+      "changes": 1
+    },
+    {
+      "category": "material_new_affected_lot",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0883,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_detail",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0842,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_detail",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0833,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_detail",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0853,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_detail",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0844,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_detail",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0839,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_version",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0862,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_version",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.086,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_version",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0839,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_version",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0825,
+      "changes": 1
+    },
+    {
+      "category": "material_notice_version",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0833,
+      "changes": 1
+    },
+    {
+      "category": "material_critical_addition",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0868,
+      "changes": 1
+    },
+    {
+      "category": "material_critical_addition",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0994,
+      "changes": 1
+    },
+    {
+      "category": "material_critical_addition",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0851,
+      "changes": 1
+    },
+    {
+      "category": "material_critical_addition",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0884,
+      "changes": 1
+    },
+    {
+      "category": "material_critical_addition",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.1075,
+      "changes": 1
+    },
+    {
+      "category": "material_uncertain_lot_resolved",
+      "variant": 0,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0838,
+      "changes": 1
+    },
+    {
+      "category": "material_uncertain_lot_resolved",
+      "variant": 1,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0835,
+      "changes": 1
+    },
+    {
+      "category": "material_uncertain_lot_resolved",
+      "variant": 2,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0832,
+      "changes": 1
+    },
+    {
+      "category": "material_uncertain_lot_resolved",
+      "variant": 3,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.084,
+      "changes": 1
+    },
+    {
+      "category": "material_uncertain_lot_resolved",
+      "variant": 4,
+      "expected_current": false,
+      "actual_current": false,
+      "passed": true,
+      "latency_ms": 0.0843,
+      "changes": 1
+    },
+    {
+      "category": "noncritical_note_insert",
+      "variant": 0,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0759,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_insert",
+      "variant": 1,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0754,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_insert",
+      "variant": 2,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0742,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_insert",
+      "variant": 3,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0758,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_insert",
+      "variant": 4,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.076,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_revision",
+      "variant": 0,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0753,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_revision",
+      "variant": 1,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0765,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_revision",
+      "variant": 2,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0762,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_revision",
+      "variant": 3,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0785,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_note_revision",
+      "variant": 4,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0745,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_case_title",
+      "variant": 0,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0741,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_case_title",
+      "variant": 1,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0749,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_case_title",
+      "variant": 2,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0914,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_case_title",
+      "variant": 3,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0752,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_case_title",
+      "variant": 4,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.1071,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_audit_entry",
+      "variant": 0,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.073,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_audit_entry",
+      "variant": 1,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0751,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_audit_entry",
+      "variant": 2,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.095,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_audit_entry",
+      "variant": 3,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.075,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_audit_entry",
+      "variant": 4,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0757,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_clear_inventory_quantity",
+      "variant": 0,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0737,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_clear_inventory_quantity",
+      "variant": 1,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0735,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_clear_inventory_quantity",
+      "variant": 2,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0736,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_clear_inventory_quantity",
+      "variant": 3,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.0731,
+      "changes": 0
+    },
+    {
+      "category": "noncritical_clear_inventory_quantity",
+      "variant": 4,
+      "expected_current": true,
+      "actual_current": true,
+      "passed": true,
+      "latency_ms": 0.072,
+      "changes": 0
+    }
+  ]
+}

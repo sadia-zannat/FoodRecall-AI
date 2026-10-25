@@ -1,0 +1,11 @@
+........................................................................ [ 96%]
+...                                                                      [100%]
+75 passed in 4.90s
+[SECURITY] Store the first-start password privately; to reset use python scripts/manage_users.py
+SYNTHETIC EVIDENCE-DEPENDENCY EVAL: 65/65 pass, p50=0.0688 ms, p95=0.1349 ms
+Results: /mnt/data/foodrecall_v07_work/foodrecall-ai/evaluation/results_evidence_dependencies.json
+V0.4 REAL TCP HTTP: PASS health, EPCIS, 401 guest, cookie login, CSRF 403, approval, material revision diff, stale 409, new approval/verified hold, idempotent replay, SQLite readback, logout.
+[SECURITY] Store the first-start password privately; to reset use python scripts/manage_users.py
+V0.4 CHROMIUM UI: VERIFIED login, actual auth cookie/CSRF, 8-locale UI switching sample, RTL, theme, agent, QA approval, stale decision diff, verified hold, FDA/EPCIS screens, mobile, logout. Bridge test, not public browsing.
+I18N PASS: 8 locales × 115 keys; zero missing values; template placeholders consistent.
+V0.2 I18N PASS: 8 locales × 29 new strings

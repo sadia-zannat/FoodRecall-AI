@@ -1,0 +1,56 @@
+FoodRecall AI V0.8 local development verification — 24 October 2026 (Asia/Dhaka)
+Source: user-uploaded V0.7 ZIP, clean extracted; edited V0.8 source in independent work folder.
+
+Executed here (not inferred):
+  python -m pytest backend/tests -q --disable-warnings
+  RESULT: 85 passed (85/85), about 11.60 seconds in latest full run.
+
+  python scripts/evaluate_scout.py
+  RESULT: gate PASS, 50 authored cases (40 labeled intents + 10 adversarial/clean controls);
+  local intent top1=1.0, top3=1.0, primary-tool coverage=1.0,
+  local guard precision=1.0, recall=1.0 on these specific authored examples.
+  LIMIT: These scores are *not* external benchmarks or official Meterless acceptance.
+
+  python scripts/evaluate_release.py
+  RESULT: 65/65 synthetic evidence-dependency scenarios passed.
+
+  python scripts/test_http_v04.py
+  RESULT: PASS real Uvicorn localhost TCP HTTP, authenticated cookie, CSRF denial,
+  QA approval, stale revision denial, revised approval and SQLite readback.
+
+  python scripts/browser_v04_smoke.py
+  RESULT: PASS Chromium in-process bridge for login, locale, theme, agent,
+  QA/stale proposal, FDA & EPCIS pages, responsive/mobile and logout.
+  LIMIT: Not a public-hosted browser or TLS test.
+
+  node scripts/test_i18n.mjs
+  RESULT: PASS 8 locales x 115 keys, structural validation not linguistic accuracy.
+  node scripts/test_v02_locales.mjs
+  RESULT: PASS 8 locales x 29 extension keys.
+  node --check frontend/app.js
+  RESULT: PASS JS syntax.
+
+  python scripts/preflight.py --output verification/PREFLIGHT_V08_LOCAL.json
+  RESULT: ran with no outbound requests; NVIDIA/Zetaris/Meterless LLM gateway missing,
+  LangGraph unavailable, Scout local stage1 selftest PASS.
+
+  Presentation: python-pptx generated 10-slide draft; reopened PPTX successfully.
+
+Cannot validate due external blocker:
+  - Upstream Meterless Scout Intent npm run evals (repo/packages unavailable offline)
+  - Actual NVIDIA Nemotron provider call / Zetaris real tenant read-only SQL
+  - Actual openFDA external API sync / actual LangGraph runtime
+  - Actual Render/Docker deployment, persistent storage, TLS and production IAM
+  - Real inventory source linkage, real-world recall actions or accuracy
+
+RESULT: V0.8 LOCAL TESTED CANDIDATE, NOT V1.0 OR HACKATHON SUBMISSION VERIFIED.
+
+Independent package verification (clean extract, 24 Oct 2026):
+  First V0.8 candidate ZIP extracted to separate /mnt/data/v08_clean_verify.
+  RESULT: 106 source/audit file SHA-256 digests matched the embedded manifest.
+  RESULT: 85/85 backend pytest tests passed independently from the extracted package.
+  RESULT: Scout evaluation PASS, 65/65 dependency checks PASS.
+  RESULT: TCP authenticated HTTP workflow PASS; Chromium UI smoke PASS.
+  RESULT: 8 locale dictionaries and frontend JS syntax PASS.
+  Draft slide deck: 10 slides, reopening and slide-boundary validation PASS.
+  Final release archive will be rebuilt after this verification evidence is added.

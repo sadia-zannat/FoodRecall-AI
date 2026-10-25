@@ -1,0 +1,74 @@
+{
+  "generated_at_utc": "2026-10-24T03:52:29+00:00",
+  "artifact": "FoodRecall AI v0.8 local integration readiness",
+  "scope": "LOCAL TRAINING, not enterprise certified / not a public deployment",
+  "checks": {
+    "nvidia": {
+      "configuration": "MISSING",
+      "required_variable_names": [
+        "NVIDIA_API_KEY",
+        "NVIDIA_MODEL"
+      ]
+    },
+    "zetaris": {
+      "configuration": "MISSING",
+      "required_variable_names": [
+        "ZETARIS_URL",
+        "ZETARIS_ID_TOKEN",
+        "ZETARIS_QUERY_PATH",
+        "ZETARIS_RECALL_TABLE",
+        "ZETARIS_SHIPMENT_TABLE"
+      ]
+    },
+    "meterless": {
+      "configuration": "MISSING",
+      "required_variable_names": [
+        "METERLESS_BASE_URL",
+        "METERLESS_API_KEY",
+        "METERLESS_MODEL"
+      ]
+    },
+    "langgraph": {
+      "status": "NOT_INSTALLED"
+    },
+    "scout_intent": {
+      "status": "IMPLEMENTED_LOCAL_TESTABLE_NOT_OFFICIAL_CONFORMANCE",
+      "implementation": "scoped Python Scout Intent in agent planner and signed executor",
+      "stage1_selftest": {
+        "budget_ms": 16,
+        "max_observed_ms": 2.808,
+        "passed": true,
+        "probes": 5
+      },
+      "upstream_npm_evals": "NOT_EXECUTED"
+    },
+    "coding_tool": {
+      "status": "USER_CONFIRMATION_OPTIONAL",
+      "note": "Cursor optional per organizer update supplied by participant."
+    },
+    "docker": {
+      "status": "CLI_NOT_FOUND"
+    },
+    "external_data_linkage": {
+      "status": "NOT_VERIFIED",
+      "note": "No authorized operational inventory link; exact joins are review candidates only."
+    },
+    "public_deployment": {
+      "status": "NOT_PRODUCTION_READY",
+      "note": "Explicit opt-in HTTPS single-tenant synthetic demo mode exists; hosting/TLS/security not live verified. Not for real inventory."
+    },
+    "fda": {
+      "status": "NO_LIVE_SYNC_VERIFIED",
+      "note": "Requires authenticated local app FDA sync and real successful result."
+    }
+  },
+  "live_tests": {},
+  "release_verdict": "NOT_PRODUCTION_READY",
+  "required_human_dependencies": [
+    "Provision authorized Zetaris instance and data sources",
+    "Choose entitled NVIDIA Nemotron model and private API key",
+    "Verify real LangGraph runtime on internet-connected host",
+    "Run upstream Meterless Scout Intent harness or obtain sponsor confirmation of Python spec + local test acceptance",
+    "Authorize external deployment/GitHub submission and film an actual verified demo"
+  ]
+}

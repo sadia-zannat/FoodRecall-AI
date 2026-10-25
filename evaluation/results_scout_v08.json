@@ -1,0 +1,21 @@
+{
+  "artifact": "FoodRecall V0.8 local Scout Intent evidence (NOT upstream suite)",
+  "recorded_utc": "2026-10-24T15:14:23+00:00",
+  "test_count": 50,
+  "labeled_intents": 40,
+  "adversarial_and_clean_controls": 10,
+  "metrics": {
+    "intent_top1": 1.0,
+    "intent_top3_recall": 1.0,
+    "primary_tool_coverage": 1.0,
+    "guard_detection_precision": 1.0,
+    "guard_detection_recall": 1.0,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "latency_max_ms": 0.186
+  },
+  "gate_pass": true,
+  "failures": [],
+  "upstream_meterless_npm_evals": "NOT_EXECUTED_NO_UPSTREAM_HARNESS",
+  "important_limit": "small authored fixture set, not independently representative or official conformance"
+}

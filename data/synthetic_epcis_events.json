@@ -1,0 +1,192 @@
+{
+  "origin": "SYNTHETIC_TRAINING",
+  "standards_note": "GS1 EPCIS 2.0 shaped fixtures; subset validation only; no real FDA association",
+  "events": [
+    {
+      "type": "ObjectEvent",
+      "eventID": "urn:uuid:81ab7e8b-0918-5aff-bd9f-d5901723a0cd",
+      "eventTime": "2026-09-02T10:00:00Z",
+      "eventTimeZoneOffset": "+00:00",
+      "action": "OBSERVE",
+      "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
+      "bizLocation": {
+        "id": "urn:epc:id:sgln:0614141.07346.0"
+      },
+      "quantityList": [
+        {
+          "epcClass": "urn:epc:class:lgtin:0614141.012345.LOT-A01",
+          "quantity": 120,
+          "uom": "EA"
+        }
+      ]
+    },
+    {
+      "type": "ObjectEvent",
+      "eventID": "urn:uuid:a61985e6-d455-520d-ab78-23c3c3733f70",
+      "eventTime": "2026-09-03T10:00:00Z",
+      "eventTimeZoneOffset": "+00:00",
+      "action": "OBSERVE",
+      "bizStep": "https://ref.gs1.org/cbv/BizStep-shipping",
+      "bizLocation": {
+        "id": "urn:epc:id:sgln:0614141.07346.0"
+      },
+      "quantityList": [
+        {
+          "epcClass": "urn:epc:class:lgtin:0614141.012345.LOT-A01",
+          "quantity": 90,
+          "uom": "EA"
+        }
+      ],
+      "sourceList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "source": "urn:epc:id:sgln:0614141.07346.0"
+        }
+      ],
+      "destinationList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "destination": "urn:epc:id:sgln:0614141.07347.0"
+        }
+      ]
+    },
+    {
+      "type": "ObjectEvent",
+      "eventID": "urn:uuid:6dd04b05-b427-585d-a84b-9c1a5f0490f1",
+      "eventTime": "2026-09-04T10:00:00Z",
+      "eventTimeZoneOffset": "+00:00",
+      "action": "OBSERVE",
+      "bizStep": "https://ref.gs1.org/cbv/BizStep-receiving",
+      "bizLocation": {
+        "id": "urn:epc:id:sgln:0614141.07347.0"
+      },
+      "quantityList": [
+        {
+          "epcClass": "urn:epc:class:lgtin:0614141.012345.LOT-A01",
+          "quantity": 90,
+          "uom": "EA"
+        }
+      ],
+      "sourceList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "source": "urn:epc:id:sgln:0614141.07346.0"
+        }
+      ],
+      "destinationList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "destination": "urn:epc:id:sgln:0614141.07347.0"
+        }
+      ]
+    },
+    {
+      "type": "ObjectEvent",
+      "eventID": "urn:uuid:dc6be3f1-2812-573d-be60-c05fa2f619ab",
+      "eventTime": "2026-09-05T10:00:00Z",
+      "eventTimeZoneOffset": "+00:00",
+      "action": "OBSERVE",
+      "bizStep": "https://ref.gs1.org/cbv/BizStep-shipping",
+      "bizLocation": {
+        "id": "urn:epc:id:sgln:0614141.07347.0"
+      },
+      "quantityList": [
+        {
+          "epcClass": "urn:epc:class:lgtin:0614141.012345.LOT-A01",
+          "quantity": 30,
+          "uom": "EA"
+        }
+      ],
+      "sourceList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "source": "urn:epc:id:sgln:0614141.07347.0"
+        }
+      ],
+      "destinationList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "destination": "urn:epc:id:sgln:0614141.07348.0"
+        }
+      ]
+    },
+    {
+      "type": "ObjectEvent",
+      "eventID": "urn:uuid:7b4d8c02-a016-51f8-aed4-7adee58e1928",
+      "eventTime": "2026-09-06T10:00:00Z",
+      "eventTimeZoneOffset": "+00:00",
+      "action": "OBSERVE",
+      "bizStep": "https://ref.gs1.org/cbv/BizStep-receiving",
+      "bizLocation": {
+        "id": "urn:epc:id:sgln:0614141.07348.0"
+      },
+      "quantityList": [
+        {
+          "epcClass": "urn:epc:class:lgtin:0614141.012345.LOT-A01",
+          "quantity": 30,
+          "uom": "EA"
+        }
+      ],
+      "sourceList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "source": "urn:epc:id:sgln:0614141.07347.0"
+        }
+      ],
+      "destinationList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "destination": "urn:epc:id:sgln:0614141.07348.0"
+        }
+      ]
+    },
+    {
+      "type": "ObjectEvent",
+      "eventID": "urn:uuid:4e73f5eb-3c1e-5947-9578-734e34f14f27",
+      "eventTime": "2026-09-02T10:00:00Z",
+      "eventTimeZoneOffset": "+00:00",
+      "action": "OBSERVE",
+      "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
+      "bizLocation": {
+        "id": "urn:epc:id:sgln:0614141.07346.0"
+      },
+      "quantityList": [
+        {
+          "epcClass": "urn:epc:class:lgtin:0614141.012345.LOT-A02",
+          "quantity": 55,
+          "uom": "EA"
+        }
+      ]
+    },
+    {
+      "type": "ObjectEvent",
+      "eventID": "urn:uuid:fd7258e1-6742-59d5-8ed2-0cca5fe26125",
+      "eventTime": "2026-09-03T10:00:00Z",
+      "eventTimeZoneOffset": "+00:00",
+      "action": "OBSERVE",
+      "bizStep": "https://ref.gs1.org/cbv/BizStep-shipping",
+      "bizLocation": {
+        "id": "urn:epc:id:sgln:0614141.07346.0"
+      },
+      "quantityList": [
+        {
+          "epcClass": "urn:epc:class:lgtin:0614141.012345.LOT-A02",
+          "quantity": 55,
+          "uom": "EA"
+        }
+      ],
+      "sourceList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "source": "urn:epc:id:sgln:0614141.07346.0"
+        }
+      ],
+      "destinationList": [
+        {
+          "type": "urn:epcglobal:cbv:sdt:location",
+          "destination": "urn:epc:id:sgln:0614141.07348.0"
+        }
+      ]
+    }
+  ]
+}
