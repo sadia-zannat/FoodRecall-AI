@@ -67,7 +67,14 @@ and an LLM adapter (see verified status below).
 | NVIDIA Nemotron / Meterless live inference | Not yet verified |
 | Operational inventory actions | Synthetic training simulation only |
 
-A functioning connector or local test does not prove full external source integration. See [SPONSOR_INTEGRATION_REPORT.md](SPONSOR_INTEGRATION_REPORT.md) and [CHANGELOG.md](CHANGELOG.md) for technical history and evidence.
+
+FoodRecall AI has successfully established and verified a live local JDBC connection to Zetaris, including a successful SQL `SELECT 1` query and `default` catalog discovery.
+
+End-to-end recall and shipment data integration remains under development. The public Render demo currently operates independently using synthetic training data.
+
+A functioning connector or local test does not prove full external source integration.
+
+For detailed technical documentation and evidence, see [Sponsor Integration Report](SPONSOR_INTEGRATION_REPORT.md) and [Development Changelog](CHANGELOG.md).
 
 ## Run Locally
 
